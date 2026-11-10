@@ -18,16 +18,12 @@
 <meta name="twitter:title" content="Bells Course Registration Form">
 <meta name="twitter:description" content="Fill in your details to register for your Bells course.">
 <meta name="twitter:image" content="https://bells-registration.github.io/bells-logo.png">
-<style>
-body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;color:#334;background:#fff;text-align:center}
-p{font-size:16px;padding:0 24px}
-</style>
+<style>html,body{margin:0;height:100%;background:#09111f}iframe{position:fixed;inset:0;width:100%;height:100%;border:0}#msg{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;color:#cbd5e1;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;text-align:center;z-index:0}iframe{z-index:1}</style>
 </head>
 <body>
 <p id="msg">Opening your registration form…<noscript><br><a href="https://enspire-sg.github.io/myjourney/">Tap here to continue</a></noscript></p>
 <script>
-/* Keeps the #learner=<token> part, then hands over to the public learner form in the My Journey shell. */
-window.location.replace('https://enspire-sg.github.io/myjourney/' + window.location.hash);
+var f=document.createElement('iframe');f.title='Bells Course Registration Form';f.src='https://enspire-sg.github.io/myjourney/'+window.location.hash;f.setAttribute('allow','clipboard-write');document.body.appendChild(f);
 </script>
 </body>
 </html>
